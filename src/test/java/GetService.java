@@ -1,5 +1,7 @@
 public class GetService extends ServiceClass implements IService {
 
+    private GetServiceResponse serviceResponse;
+
     /**
      * @param request  the request object required
      * @param endPoint the endpoint of the voyantaService
@@ -9,7 +11,6 @@ public class GetService extends ServiceClass implements IService {
         super(request, endPoint);
     }
 
-    private GetServiceResponse serviceResponse;
     @Override
     protected void checkThatResponseBodyIsPopulated() {
         checkThatResponseBodyIsPopulated(serviceResponse);

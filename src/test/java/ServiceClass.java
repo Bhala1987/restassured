@@ -2,7 +2,7 @@ import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.DeserializationContext;
 import com.fasterxml.jackson.databind.JsonDeserializer;
 import com.fasterxml.jackson.databind.ObjectMapper;
-
+import com.fasterxml.jackson.databind.deser.DeserializationProblemHandler;
 import io.restassured.RestAssured;
 import io.restassured.builder.MultiPartSpecBuilder;
 import io.restassured.config.ObjectMapperConfig;
@@ -10,21 +10,15 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import lombok.Getter;
 import lombok.Setter;
+import org.apache.commons.lang3.StringUtils;
+import org.junit.Assert;
+import org.mortbay.log.Log;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
-
-import org.junit.Assert;
-
-
-
-import com.fasterxml.jackson.databind.deser.DeserializationProblemHandler;
-import org.apache.commons.lang3.StringUtils;
-
-import org.mortbay.log.Log;
 
 import static io.restassured.config.EncoderConfig.encoderConfig;
 import static net.serenitybdd.rest.SerenityRest.given;

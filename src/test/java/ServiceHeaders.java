@@ -22,7 +22,7 @@ public final class ServiceHeaders implements IHeaders {
     @SerializedName("Accept")
     private String accept;
 
-    public static ServiceHeadersBuilder getBaseBuilder(){
+    public static ServiceHeadersBuilder getBaseBuilder() {
 
         return ServiceHeaders.builder()
                 .locale("en-gb")
@@ -34,7 +34,7 @@ public final class ServiceHeaders implements IHeaders {
 
     }
 
-    public static ServiceHeadersBuilder getFileBuilder(){
+    public static ServiceHeadersBuilder getFileBuilder() {
 
         return ServiceHeaders.builder()
                 .locale("en-gb")
@@ -43,7 +43,7 @@ public final class ServiceHeaders implements IHeaders {
 
     }
 
-    public static ServiceHeadersBuilder getFileBuilderZ(){
+    public static ServiceHeadersBuilder getFileBuilderZ() {
 
         return ServiceHeaders.builder()
                 .locale("en-us")
@@ -52,7 +52,7 @@ public final class ServiceHeaders implements IHeaders {
 
     }
 
-    public static ServiceHeadersBuilder getNoHeaders(){
+    public static ServiceHeadersBuilder getNoHeaders() {
 
         return ServiceHeaders.builder();
 
