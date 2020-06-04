@@ -1,5 +1,5 @@
 # restassured
-restassured API automation framework
+#### restassured API automation framework
 
 This functional testing automation framework for RESTful API webservices has been built using:
 
@@ -16,7 +16,7 @@ This functional testing automation framework for RESTful API webservices has bee
 6. Serenity for reporting
 
 
-Steps to get this project:
+##### Steps to get this project:
 
 1. git clone https://github.com/Bhala1987/restassured.git
 
@@ -32,7 +32,7 @@ Steps to get this project:
 NOTE: This whole project is built using java8 version as newer versions are having some problems, hence highly recommended to use Java8 open source JDK.
 
 
-Commits:
+##### Commits:
 1. Don't commit the following files/directories (also .gitignore file will take care of):
 
 .idea
